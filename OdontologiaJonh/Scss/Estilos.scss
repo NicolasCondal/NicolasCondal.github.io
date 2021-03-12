@@ -1,0 +1,321 @@
+$principal: #0b8aa0;
+$secundario: #66a5ad;
+$terciario: #2c7873;
+$texto: #414444;
+
+.text-primary {
+    color: $principal !important;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color:  $secundario;
+    border-color:  darken($secundario, 30%);
+}
+
+
+.btn-primary:hover,
+.btn-primary:focus {
+    color: #fff;
+    background-color: darken($secundario, 10%);
+      
+}
+
+.btn-primary:active{
+    background-color: darken($secundario, 20%);
+}
+
+body{
+    color: $texto;
+    font-family: 'Newsreader', serif;
+}
+
+html{
+    font-size: 13px;
+}
+
+@media (min-width: 768px){
+    html{
+        font-size: 16px;
+    }
+}
+
+
+.item {
+    
+    color: #fff;
+    position: relative;
+  }
+  .item:before {
+    position: absolute;
+    bottom: 0;
+    content: "";
+     
+    width: 0;
+    height: 3px;
+    background-color: #fff;
+    transition: all .3s;
+  }
+  .item:hover:before {
+    width: 100%;
+  } 
+  
+  
+  .tres:before {
+    left: 50%;
+  }
+  .tres:hover:before {
+    left:0;
+  }
+
+  .MiBorde{
+    background: linear-gradient(90deg, rgba(236,249,251,1) 0%, rgba(102,165,173,1) 35%, rgba(236,249,251,1) 100%);
+      width: 85%;
+      height: 1px;
+  }
+
+  .MiBorde2{
+    background: linear-gradient(90deg, rgba(236,249,251,1) 0%, rgba(102,165,173,1) 35%, rgba(236,249,251,1) 100%);
+    width: 55%;
+    height: 1px;
+  }
+
+  .card:hover{
+      box-shadow:  0 0 10px #0c0c0c3b;
+  }
+
+
+
+
+  /* PRUEBA DE HABILIDADES */
+.MiContenedor{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    right: 60px;
+    margin: 0 auto;
+    top: 20px;
+
+}
+ 
+
+.div-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .div-img .img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    transform: translate(0px);
+    -ms-transform: translate(0px);
+    -moz-transform: translate(0px);
+    -webkit-transform: translate(0px);
+    -o-transform: translate(0px);
+    -webkit-transition: all 500ms ease-in-out;
+    -moz-transition: all 500ms ease-in-out;
+    -ms-transition: all 500ms ease-in-out;
+    -o-transition: all 500ms ease-in-out;
+  }
+  .div-img .text {
+    font-family: 'Open Sans';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    height: 50%;
+    top: 50%;
+    right: 0;
+    padding-right: 5px;
+  }
+  .div-img:hover .img {
+    transform: translate(-90px, 0px);
+    -ms-transform: translate(-90px, 0px);
+    -moz-transform: translate(-90px, 0px);
+    -webkit-transform: translate(-90px, 0px);
+    -o-transform: translate(-90px, 0px);
+  }
+
+
+ 
+
+      .MicMiImagen{
+          border-radius: 2rem;
+      }
+
+
+
+
+
+
+
+   /* MI NOMBRE*/
+   
+ .MicMiNombre{
+  font-family: 'Raleway', sans-serif;
+   
+  margin:0;
+  text-transform:uppercase;
+  color:transparent;
+  text-shadow:0 0 10px white;
+  text-align:center;
+  letter-spacing:2px;
+  animation-name: focus;
+  animation-duration: 2s;
+  animation-iteration-count:infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+  display: inline;
+}
+
+@keyframes focus {
+  0% {
+    text-shadow:0 0 20px  #19F9F5, 0 20px 30px darken(#19F9F5,30%);
+    letter-spacing:5px;
+  }
+  50% {
+    text-shadow:0 0 0  $terciario;
+    
+    letter-spacing:2px;
+  }
+  75% {
+    text-shadow:0 0 0  $secundario;
+    
+    letter-spacing:2px;
+  }
+  100% {
+    text-shadow:0 0 0  $principal;
+     
+    letter-spacing:2px;
+  }
+}
+
+ 
+
+@media (max-width: 450px){
+  @keyframes focus{
+    0% {
+      text-shadow:0 0 20px  #19F9F5, 0 20px 30px darken(#19F9F5,30%);
+      letter-spacing:3px;
+    }
+    50% {
+      text-shadow:0 0 0  #19F9F5;
+      
+      letter-spacing:1px;
+    }
+    75% {
+      text-shadow:0 0 0  #19F9F5;
+      
+      letter-spacing:1px;
+    }
+    100% {
+      text-shadow:0 0 0  #19F9F5;
+       
+      letter-spacing:1px;
+    }
+  }
+}
+
+
+
+
+/*PRUENA HOVER IMG*/
+.MiHoverCss{
+
+  transition: all 500ms ease-out;
+}
+
+figure .capa{
+  position: absolute;
+  top: 0;
+  width: 87%;
+  height: 90%;
+   background: rgba(0, 103, 123, 0.1);
+   border-radius: 20px;
+   transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+   text-align: center;
+}
+
+
+ figure:hover > .capa {
+opacity: 1;
+visibility: visible;
+
+}
+
+
+
+figure:hover > .capa h3{
+  margin-top: 70px ;
+  margin-bottom: 15px;
+  
+}
+
+figure .capa h3{
+  color:rgb(1, 3, 95);
+  font-weight: 400;
+  margin-bottom: 120px;
+  margin-top: 30px;
+  transition: all 500ms ease-out;
+}
+
+
+
+
+
+
+/*PRUENA HOVER VIDEO*/
+.MiVideoCss3{
+
+  transition: all 500ms ease-out;
+}
+
+.VideoFig .capadeVideo{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 96%;
+   background: rgba(0, 103, 123, 0.5);
+   margin-top: 8px;
+   transition: all 500ms ease-out;
+  opacity: 0;
+  visibility: hidden;
+   text-align: center;
+}
+
+
+.VideoFig:hover > .capadeVideo {
+opacity: 1;
+visibility: visible;
+
+}
+
+
+
+.VideoFig:hover > .capadeVideo h3{
+  margin-top: 70px ;
+  margin-bottom: 15px;
+  
+}
+
+.VideoFig .capadeVideo h3{
+  color:rgb(243, 243, 247);
+  font-weight: 400;
+  margin-bottom: 120px;
+  margin-top: 30px;
+  transition: all 500ms ease-out;
+}
+
+
+
+
+
+
+
