@@ -18,4 +18,10 @@ ul, ol {
 .mi-nav li:hover > ul {
   display: block; }
 
+.MiBorde2 {
+  background: -webkit-gradient(linear, left top, right top, from(#ecf9fb), color-stop(35%, #66a5ad), to(#ecf9fb));
+  background: linear-gradient(90deg, #ecf9fb 0%, #66a5ad 35%, #ecf9fb 100%);
+  width: 55%;
+  height: 1px; }
+
 /*# sourceMappingURL=EstilosODO.css.map */
